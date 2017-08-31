@@ -179,6 +179,9 @@ hr.small {
 	.background-cover;
 	// NOTE: Background images are set within the HTML using inline CSS!
 	margin-bottom: 50px;
+	@media only screen and (max-width: 768px) {
+		margin-bottom: 10px;
+	}
 	.site-heading,
 	.post-heading,
 	.page-heading {
@@ -471,5 +474,31 @@ img::-moz-selection {
 }
 
 body {
-	-webkit-tap-highlight-color: @theme-primary;
+	/*-webkit-tap-highlight-color: @theme-primary;*/
+}
+
+
+/*!
+ * override blog style
+*/
+
+.navbar-toggle {
+    padding:7px 15px!important;
+}
+.navbar-default .navbar-toggle {
+    border-color: transparent !important;
+}
+.fa-menu {
+    font: normal normal normal 16px FontAwesome;
+    font-size: 20px !important;
+}
+.navbar-default .navbar-toggle {
+    border-color: #ddd;
+}
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: transparent !important;
+	color:#333 !important;
+}
+.navbar-toggle {
+	margin-right: 0  !important;
 }

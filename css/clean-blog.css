@@ -154,6 +154,11 @@ hr.small {
   -o-background-size: cover;
   margin-bottom: 50px;
 }
+@media only screen and (max-width: 768px) {
+  .intro-header {
+    margin-bottom: 10px;
+  }
+}
 .intro-header .site-heading,
 .intro-header .post-heading,
 .intro-header .page-heading {
@@ -403,5 +408,29 @@ img::-moz-selection {
   background: transparent;
 }
 body {
-  -webkit-tap-highlight-color: #0085A1;
+  /*-webkit-tap-highlight-color: @theme-primary;*/
+}
+/*!
+ * override blog style
+*/
+.navbar-toggle {
+  padding: 7px 15px!important;
+}
+.navbar-default .navbar-toggle {
+  border-color: transparent !important;
+}
+.fa-menu {
+  font: normal normal normal 16px FontAwesome;
+  font-size: 20px !important;
+}
+.navbar-default .navbar-toggle {
+  border-color: #ddd;
+}
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+  background-color: transparent !important;
+  color: #333 !important;
+}
+.navbar-toggle {
+  margin-right: 0  !important;
 }
